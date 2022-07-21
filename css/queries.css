@@ -1,0 +1,113 @@
+@media (max-width:767px) { 
+    /* Smalle Screen, Phones  */
+    .game-box{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .next-btn-section {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .answer-section{
+        min-height: 35%;
+    }
+}
+
+@media(min-width : 768px){
+    .game-rules{
+        width: 750px;
+    }
+    .game-box{
+        padding: 20px 5px;
+    }
+    .question-box {
+        position: relative;
+        width: 85%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 5px; 
+    }
+    .answer-section{
+        position: relative;
+        width: 85%;
+        left: 50%;
+        transform: translateX(-50%);
+        }
+        .score{
+            margin: 15px 0;
+        }
+        .next-btn-section{
+            margin-top: 20px;
+        }
+    }
+
+
+
+
+    @media (min-width:992px) {
+        .game-box{
+            display: grid;
+            grid-template-columns: 1fr 200px;
+            grid-template-rows:100px 70px 120px 280px 80px; 
+        }
+        .options-help{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2; 
+            /* grid-area:help ; */
+        }
+        .progress{
+            display: flex;
+            align-items: flex-start;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+        .score{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            /* grid-area:score ; */
+        }
+        .question-box {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            /* grid-area:question ; */
+        }
+        .answer-section{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            padding-top: 20px;
+            margin-top: 10px;
+            /* grid-area:answer ; */
+
+        }
+        .next-btn-section{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 5;
+            grid-row-end: 6;
+            position: relative;
+            top: 0;
+        
+            /* grid-area:next-btn ; */
+        }
+        .question-box .question p {
+            font-size: 22px;
+            padding-left: 10px;
+        }
+        .answer-section .answer-list div p{
+            font-size: 18px;
+            padding-left: 10px;
+        }
+}
