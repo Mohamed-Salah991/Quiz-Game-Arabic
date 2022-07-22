@@ -120,7 +120,7 @@ margin-left: -10px;
 
 .text p {
     padding: 5px 5px 5px 0; 
-    font-weight: 500;
+    font-weight: 600;
 }
 .text ol {
     list-style-type: arabic-indic;
@@ -128,7 +128,7 @@ margin-left: -10px;
     counter-reset: item;
 }
 .text ol li ol{
-    padding-left: 20px;
+    padding-right: 20px;
 
 }
 
@@ -189,7 +189,7 @@ button.restart:hover{
     padding: 30px 5px;
     /* display: none; */
 
-    transition: all 9s ease;
+    /* transition: all 9s ease; */
     width: 100%;
     opacity: 0;
     pointer-events: none;
@@ -209,13 +209,36 @@ button.restart:hover{
 }
 .options-help .content div{
     position: relative;
-    transition: 0.3s; 
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .options-help .content div:hover{
     background-color: #2196f3;
-    border-radius: 10px;
+    border-radius: 10px; 
+}
+.options-help .content div::after{
+    position: absolute;
+    bottom: -17px;
+    left: 0px;
+    width: 100px;
+    color: #cddc39;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+.options-help .content div::before{
+    content: "";
+    position: absolute;
+    transition: all 0.4s ease;
+}
+.options-help .content .one::after{
+    content: "حذف إجابتين";
+}
+.options-help .content .two::after{
+    content: "تخطي السؤال";
+}
+.options-help .content .three::after{
+    content: "عرض الإجابة";
 }
 
 .options-help .content div.disabled::before{
