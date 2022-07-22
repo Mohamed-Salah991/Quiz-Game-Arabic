@@ -189,7 +189,7 @@ button.restart:hover{
     padding: 30px 5px;
     /* display: none; */
 
-    /* transition: all 9s ease; */
+    transition: all 9s ease;
     width: 100%;
     opacity: 0;
     pointer-events: none;
